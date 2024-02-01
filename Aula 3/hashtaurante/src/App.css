@@ -1,0 +1,107 @@
+@font-face {
+  font-family: 'San Francisco';
+  font-weight: 400;
+  src: url('https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-regular-webfont.woff');
+}
+
+#root {
+  box-sizing: border-box;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  font-family: 'San Francisco';
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+.navegacao {
+  display: flex;
+  gap: 0.1rem;
+  margin-top: 1rem;
+  justify-content: space-between;
+}
+
+.botao-navegacao {
+  width: 30%;
+  background-color: #1f1f1f;
+  color: #f0f0f0;
+  border-radius: 10px;
+  padding: 0.3rem 0;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.container-item-cardapio {
+  display: flex;
+  width: 32rem;
+  padding: 1rem;
+  justify-content: space-evenly;
+  border-radius: 10px;
+  box-shadow: -2px 2px 20px #002;
+  & > h4 {
+    font-weight: 600;
+  }
+}
+
+.imagem-item-cardapio {
+  height: 11rem;
+}
+
+.informacoes-item-cardapio {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  flex-basis: 60%;
+  flex-grow: 0;
+}
+
+.menu {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 35px;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+.capa {
+  max-height: 15rem;
+  width: 100%;
+  object-fit: cover;
+}
